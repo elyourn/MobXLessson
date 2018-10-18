@@ -6,7 +6,6 @@ import { observer, inject } from 'mobx-react'
 class People extends Component {
     render() {
         const { people } = this.props;
-        console.log(this.props);
         return (
             <div className="form">
                 <h1>
@@ -14,7 +13,7 @@ class People extends Component {
                 </h1>
                 {people.persons.map((item, i) => <div key={i}>{`${i+1}. ${item.name} ${item.surname}`}</div>)}
             </div>
-        )
+        );
     }
 }
 

@@ -8,7 +8,6 @@ import TextArea from '../../components/TextArea';
 class Form extends Component {
     render() {
         const { form } = this.props;
-        console.log(this.props);
 
         return (
             <div className="form">
@@ -16,7 +15,7 @@ class Form extends Component {
                 <label>Surname: </label><TextArea text={form.data.surname} onChange={form.setSurname} />
                 <Button onClick={form.addPerson} text="Add a Person" />
             </div>
-        )
+        );
     }
 }
 
