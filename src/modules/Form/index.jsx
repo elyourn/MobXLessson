@@ -11,10 +11,11 @@ class Form extends Component {
 
         return (
             <div className="form">
-                <TextArea text={form.data.comment} onChange={form.setComment} />
-                <Button onClick={form.addEvent} text="Send" />
+                <label>Name: </label><TextArea text={form.data.name} onChange={form.setName} />
+                <label>Surname: </label><TextArea text={form.data.surname} onChange={form.setSurname} />
+                <Button onClick={form.addPerson} text="Add a Person" />
             </div>
-        )
+        );
     }
 }
 

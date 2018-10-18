@@ -3,20 +3,20 @@ import BasicStore from '../../../stores/basic';
 
 class FormStore extends BasicStore {
     @observable data = {
-        comment: '',
-        date: ''
+        name: '',
+        surname: ''
     };
 
-    @action setComment = (text) => {
-        this.data.comment = text;
-    }
-    
-    @action setDate = (date) => {
-        this.data.date = date;
-    }
+    @action setName = (name) => {
+        this.data.name = name;
+    };
 
-    @action addEvent = () => {
-        this.getStore('events').addEvent({...this.data});
+    @action setSurname = (surname) => {
+        this.data.surname = surname;
+    };
+
+    @action addPerson = () => {
+        this.getStore('people').addPerson({...this.data});
     }
 }
 
