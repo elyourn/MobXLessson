@@ -1,9 +1,9 @@
-import PersonStore from '../modules/People/store';
+import EventsStore from '../modules/Events/store';
 import FormStore from '../modules/Form/store';
 
 const stores = {};
 
-stores.people = new PersonStore(stores);
+stores.events = new EventsStore(stores)
 stores.form = new FormStore(stores);
 
 export default stores;
