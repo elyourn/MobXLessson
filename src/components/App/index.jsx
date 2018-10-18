@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Form from '../../modules/Form';
-import Events from '../../modules/Events';
+import People from '../../modules/People';
 
 const App = () => (
     <div className="app">
         <Form />
-        <Events />
+        <People />
     </div>
 );
 
